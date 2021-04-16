@@ -25,7 +25,7 @@ A school assignment to create a small application using React.
 
 _Option 1_
 
-[Netlify coming soon...](https://github.com/gusjak/react-brewdog-app)
+Simply visit [React Brewdog App](https://brewdog-react.netlify.app/)
 
 <br>
 
