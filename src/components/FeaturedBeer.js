@@ -3,8 +3,8 @@ import FoodList from './FoodList'
 
 const FeaturedBeer = (props) => {
     return (
-        <div className="flex flex-col justify-center items-center text-white text-center mt-32 px-4 py-4 md:mt-32 md:px-6">
-            <img className="object-contain h-40 mb-5 md:h-64" src={props.img} alt="brewdog beer" />
+        <div className="w-full max-h-screen flex flex-col justify-center items-center text-white text-center mt-32 px-4 py-4 md:mt-32 md:px-6">
+            <img className="h-48 mb-5 lg:h-60" src={props.img} alt="brewdog beer" />
             <div className="flex flex-row">
                 <h2 className="font-semibold text-pink-50 tracking-wider text-xl mr-1">{props.name}</h2>
                 <h2 className="font-semibold text-pink-300 tracking-wider text-xl">({props.abv}%)</h2>

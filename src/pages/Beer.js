@@ -4,22 +4,25 @@ import SingleBeer from '../components/SingleBeer'
 import Button from '../components/Button'
 
 const Beer = (props) => {
-    const [beer, setBeer] = useState()
+    const [beer, setBeer] = useState(null)
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         fetchBeerById(props.id)
-    }, [])
+    })
 
     const fetchBeerById = (id) => {
         fetch(`https://api.punkapi.com/v2/beers/${id}`)
             .then((response) => response.json())
             .then((data) => {
                 setBeer(...data)
+                setIsLoading(false)
             })
             .catch((error) => console.error(error))
     }
     return (
         <div className="w-full min-h-screen flex justify-center flex-col items-center bg-gradient-to-l from-indigo-800 to-purple-600 font-sans">
+            {isLoading && <h1 className="text-4xl text-white ml-4">Fetching your beer...</h1>}
             {beer && (
                 <SingleBeer
                     img={beer.image_url}
@@ -30,7 +33,9 @@ const Beer = (props) => {
                     food={beer.food_pairing}
                 />
             )}
-            <Button handleClick={() => navigate('/beers')}>Go back</Button>
+            <div className="mb-5">
+                <Button handleClick={() => navigate('/beers')}>Go back</Button>
+            </div>
         </div>
     )
 }
