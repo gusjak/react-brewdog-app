@@ -48,7 +48,7 @@ class App extends Component {
                         fetchRandomBeer={this.fetchRandomBeer}
                         path="/"
                     />
-                    <Beers allBeers={this.state.allBeers} path="/beers" />
+                    <Beers allBeers={this.state.allBeers} path="/beers/" />
                     <Beer path="/beers/:id" />
                     <NotFound default />
                 </Router>

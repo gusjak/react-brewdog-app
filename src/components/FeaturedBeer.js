@@ -5,7 +5,7 @@ const FeaturedBeer = (props) => {
     return (
         <div className="w-full max-h-screen flex flex-col justify-center items-center text-white text-center mt-32 px-4 py-4 md:px-6 lg:flex-row">
             <img className="max-w-md h-32 mb-5 lg:h-80" src={props.img} alt="brewdog beer" />
-            <div className="flex flex-col justify-center items-center ml-0 lg:ml-32">
+            <div className="flex flex-col justify-center items-center ml-0 lg:ml-24">
                 <div className="flex flex-row">
                     <h2 className="font-semibold text-pink-50 tracking-wider text-xl mr-1 lg:text-2xl">{props.name}</h2>
                     <h2 className="font-semibold text-pink-300 tracking-wider text-xl lg:text-2xl">({props.abv}%)</h2>

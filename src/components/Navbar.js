@@ -9,7 +9,7 @@ function Navbar() {
                     <h1 className="font-semibold text-3xl tracking-wide text-white ml-4">Brewdog React</h1>
                     <a
                         href="https://punkapi.com/documentation/v2"
-                        className="text-sm text-white ml-4 hover:text-pink-300"
+                        className="text-sm text-white ml-4 hover:text-pink-300 lg:ml-0"
                     >
                         https://punkapi.com/documentation/v2
                     </a>
