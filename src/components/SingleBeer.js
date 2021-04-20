@@ -3,7 +3,7 @@ import FoodList from './FoodList'
 
 const SingleBeer = (props) => {
     return (
-        <div className="w-full max-h-screen flex flex-col justify-center items-center text-white text-center mt-32 px-4 py-4 md:px-6 lg:flex-row">
+        <div className="w-full max-h-screen flex flex-col justify-center items-center text-white text-center mt-36 px-4 py-4 md:px-6 lg:mt-40 lg:flex-row">
             <img className="max-w-md h-32 mb-5 lg:h-80 lg:ml-40" src={props.img} alt="brewdog beer" />
             <div className="flex flex-col justify-center items-center ml-0">
                 <div className="flex flex-row">

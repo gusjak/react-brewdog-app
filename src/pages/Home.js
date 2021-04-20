@@ -4,7 +4,7 @@ import FeaturedBeer from '../components/FeaturedBeer'
 
 const Home = (props) => {
     return (
-        <div className="w-full h-screen flex justify-center flex-col items-center bg-gradient-to-l from-indigo-800 to-purple-600 font-sans">
+        <div className="w-full min-h-screen flex justify-center flex-col items-center bg-gradient-to-l from-indigo-800 to-purple-600 font-sans">
             {props.beer !== '' && (
                 <FeaturedBeer
                     img={props.beer.image_url ? props.beer.image_url : props.fallbackImage}
