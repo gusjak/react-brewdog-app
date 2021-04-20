@@ -1,4 +1,4 @@
-# Beer and Food Pairing
+# Beer Randomiser
 
 <img src="https://cdn.dribbble.com/users/60266/screenshots/2143329/bierhaus_comida_medio.gif"  width="40%">
 
