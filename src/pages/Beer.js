@@ -21,7 +21,7 @@ const Beer = (props) => {
             .catch((error) => console.error(error))
     }
     return (
-        <div className="w-full min-h-screen flex justify-center flex-col items-center bg-gradient-to-l from-indigo-800 to-purple-600 font-sans">
+        <div className="min-h-screen flex justify-center flex-col items-center bg-gradient-to-l from-indigo-800 to-purple-600 font-sans">
             {isLoading && <h1 className="text-4xl text-white ml-4">Fetching your beer...</h1>}
             {beer && (
                 <SingleBeer
